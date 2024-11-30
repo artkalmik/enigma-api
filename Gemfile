@@ -11,6 +11,8 @@ gem "pg", "~> 1.1"
 gem "rack-cors"
 gem "fast_jsonapi"
 gem "oj"
+gem "rswag-api"
+gem "rswag-ui"
 
 # Аутентификация и авторизация
 gem "devise"
@@ -38,6 +40,7 @@ gem "lograge"
 group :development, :test do
   gem "debug"
   gem "rspec-rails"
+  gem "rswag-specs"
   gem "factory_bot_rails"
   gem "faker"
   gem "database_cleaner"
