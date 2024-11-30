@@ -34,6 +34,7 @@ Enigma is a secure messaging platform that leverages blockchain technology and e
 ## Setup
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/yourusername/enigma.git
 cd enigma
