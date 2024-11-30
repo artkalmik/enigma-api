@@ -290,10 +290,7 @@ GEM
 
 PLATFORMS
   aarch64-linux
-  arm-linux
-  arm64-darwin
-  x86-linux
-  x86_64-darwin
+  arm64-darwin-21
   x86_64-linux
 
 DEPENDENCIES
@@ -311,5 +308,8 @@ DEPENDENCIES
   thruster
   tzinfo-data
 
+RUBY VERSION
+   ruby 3.2.2p53
+
 BUNDLED WITH
-   2.5.23
+   2.4.10
