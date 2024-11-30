@@ -2,50 +2,46 @@ source "https://rubygems.org"
 
 ruby "3.2.2"
 
-# Rails основа
+# Rails and API
 gem "rails", "~> 7.1.0"
-gem "puma", ">= 5.0"
-gem "pg", "~> 1.1"
-
-# API и сериализация
 gem "rack-cors"
 gem "fast_jsonapi"
 gem "oj"
 gem "rswag-api"
 gem "rswag-ui"
 
-# Аутентификация и авторизация
+# Authentication
 gem "devise"
 gem "devise-jwt"
 gem "pundit"
 
-# Блокчейн и криптография
-gem "eth"
+# Blockchain
+gem "web3-eth"
+
+# Encryption
 gem "rbnacl"
 
-# Хранение и кэширование
+# Storage
 gem "redis"
 gem "mongo"
 gem "ipfs-api"
 
-# Фоновые задачи
+# Background Jobs
 gem "sidekiq"
 gem "sidekiq-scheduler"
 
-# Мониторинг и логирование
+# Monitoring
 gem "sentry-ruby"
 gem "sentry-rails"
 gem "lograge"
 
 group :development, :test do
-  gem "debug"
   gem "rspec-rails"
   gem "rswag-specs"
   gem "factory_bot_rails"
   gem "faker"
   gem "database_cleaner"
   gem "rubocop"
-  gem "brakeman"
   gem "bundler-audit"
 end
 
