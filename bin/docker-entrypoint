@@ -1,0 +1,21 @@
+#!/bin/bash
+set -e
+
+# Удаление старого server.pid если он существует
+rm -f /rails/tmp/pids/server.pid
+
+# Ожидание доступности базы данных
+until nc -z -v -w30 postgres 5432
+do
+  echo "Waiting for Database connection..."
+  sleep 5
+done
+
+# Проверка существования базы данных
+bundle exec rails db:exists 2>/dev/null || bundle exec rails db:create
+
+# Запуск миграций
+bundle exec rails db:migrate
+
+# Запуск команды
+exec "$@"
