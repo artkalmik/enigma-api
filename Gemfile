@@ -3,7 +3,7 @@ source "https://rubygems.org"
 ruby "3.2.2"
 
 # Rails and API
-gem "rails", "~> 7.1.0"
+gem "rails", "~> 8.0.1"
 gem "rack-cors"
 gem "fast_jsonapi"
 gem "oj"
